@@ -31,6 +31,7 @@ var Player = {
 										this.container.appendChild(this.playButton);
 										this.container.appendChild(this.next);
 										this.container.appendChild(this.TrackList);
+										this.container.appendChild(this.list);
 										this.container.appendChild(this.progressBar);
 										this.container.appendChild(this.title);
 										this.container.appendChild(this.style);
@@ -41,16 +42,25 @@ var Player = {
 										}));
 										
 										//Adding classes and id's for components
+										this.container.setAttribute("id", "container");
 										this.playButton.setAttribute("id", "playButton");
 										this.playButton.setAttribute("class", "play");
 										this.prev.setAttribute("id", "prev");
 										this.next.setAttribute("id", "next");
 										this.TrackList.setAttribute("id", "TrackList");
+										this.list.setAttribute("id", "list");
+										this.list.setAttribute("class", "inactive");
+										this.list.style.display = "none";
 										this.style.setAttribute("id", "style");
 										this.title.setAttribute("id", "title");
 										this.progressBar.setAttribute("id", "progressBar");
 										this.progressBar.setAttribute("value", "0");
 										this.progressBar.setAttribute("max", "50");
+										//add text to buttons
+										this.prev.innerHTML = "Prev";
+										this.playButton.innerHTML = "Play";
+										this.next.innerHTML = "Next";
+										this.TrackList.innerHTML = "Tracks";
 										
 										//Adding events on components
 										this.playButton.addEventListener('click', ()=>{
@@ -58,17 +68,31 @@ var Player = {
 												this.play();
 												$(this.playButton).removeClass("play");
 												$(this.playButton).addClass("pause");
+												this.playButton.innerHTML = "Pause";
 											}
 											else{
 												this.pause();
 												$(this.playButton).removeClass("pause");
 												$(this.playButton).addClass("play");
+												this.playButton.innerHTML = "Play";
 											}
 												
 										});
 										this.prev.addEventListener('click', ()=>{this.prevTrack();});
 										this.next.addEventListener('click', ()=>{this.nextTrack();});
-										
+										this.TrackList.addEventListener('click', ()=>{
+											if($(this.list).hasClass('active')){
+												$(this.list).removeClass('active');
+												$(this.list).addClass('inactive');
+												setTimeout(()=>{this.list.style.display = "none";}, 1000)
+												
+											}
+											else{
+												this.list.style.display = "unset";
+												$(this.list).removeClass('inactive');
+												$(this.list).addClass('active');
+											}
+										});
 										
 										//Load a track and save components handles
 										this.loadTrack();
@@ -78,6 +102,28 @@ var Player = {
 										this.selectableElements.push(playButton);
 										this.selectableElements.push(next);
 										this.selectableElements.push(TrackList);
+										
+										//Load List of Tracks
+										this.playlist().done((data)=>{
+											data.audios.forEach(track=>{
+												var li = document.createElement('li');
+												var button = document.createElement('button');
+												button.addEventListener('click', ()=>{
+													this.playlist().done((data)=>{
+														console.log(data.videos);
+														this.index = data.audios.indexOf(button.textContent);
+														this.loadTrack();
+													});
+												});
+												
+												this.list.appendChild(li);
+												li.appendChild(button);
+												button.innerHTML = track;
+												this.selectableListElements.push(button);												
+												
+											});
+										
+										});
 									},
 	setPlayerTime					: function (){
 										setTimeout(() => {
@@ -143,11 +189,19 @@ var Player = {
 										this.audioPlayer.muted = !this.audioPlayer.muted;
 									},
 //Test
-	getData							: function (){ this.playlist().done(
-													function (data){
-														console.log(data.audios);
-														console.log(data.link);
-													}
-												);},
+	getData							: function (){
+										$.ajax({
+										    url: this.playlistLink,
+										    type: 'GET',
+										    success: function(data){ 
+										        console.log(data);
+										        //document.body.innerHTML = "Error: "+ data;
+										    },
+										    error: function(data) {
+										        document.body.innerHTML = "Error: "+ data;
+										        document.body.innerHTML = "Error2: "+ data.message;//or whatever
+										    }
+										});
+									},
 		
 }
