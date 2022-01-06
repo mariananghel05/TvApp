@@ -8,5 +8,5 @@
             "Tudor Gheorghe_ Dans.mp3",
             "Tudor Gheorghe_ Dorul călător.mp3",
             "Vara vieții mele.mp3"],
-  "templateUrl": "https://mariananghel05.github.io/TvApp/src/templates/player.html"
+  "template": "https://mariananghel05.github.io/TvApp/src/templates/player.html"
 }
