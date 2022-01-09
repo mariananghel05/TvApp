@@ -3,10 +3,9 @@
   "playlist": ["1.mp3", 
              "2.mp3", 
              "Michael Bublé - It's Beginning To Look A Lot Like Christmas [Official HD Audio] (1).mp3",
-            "Sabrina Carpenter - Thumbs (Official Video).amr",
             "Tudor Gheorghe_ Mănăstire.mp3",
             "Tudor Gheorghe_ Dans.mp3",
             "Tudor Gheorghe_ Dorul călător.mp3",
             "Vara vieții mele.mp3"],
-  "template": "https://mariananghel05.github.io/TvApp/src/templates/player.html"
+  "imports": [{"type":"script", "url":"https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"},{"type":"script", "url":"https://mariananghel05.github.io/TvApp/src/Player.js"}]
 }
