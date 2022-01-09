@@ -7,5 +7,7 @@
             "Tudor Gheorghe_ Dans.mp3",
             "Tudor Gheorghe_ Dorul călător.mp3",
             "Vara vieții mele.mp3"],
-  "imports": [{"type":"script", "url":"https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js", "location": "head"},{"type":"script", "url":"https://mariananghel05.github.io/TvApp/src/Player.js", "location": "body"}]
+  "imports": [{"type":"script", "url":"https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js", "location": "head"},
+              {"type":"script", "url":"https://mariananghel05.github.io/TvApp/src/Player.js", "location": "body"},
+              {"type":"style", "url":"https://mariananghel05.github.io/TvApp/config/stylesheet.css", "location":"head"}]
 }
