@@ -1,10 +1,5 @@
 {
-    "templates": {
-        "list": [
-            {
-                "location": "https://mariananghel05.github.io/TvApp/src/templates/template1/",
-                "configuration": "template1.json"
-            }
-        ]
-    }
+   "js":[],
+   "css":[],
+   "template":["https://mariananghel05.github.io/TvApp/src/templates/template1.html"]
 }
