@@ -1,0 +1,14 @@
+{
+    "root": "https://mariananghel05.github.io/TvApp/",
+    "files": [
+        {
+         "_comment": "Javascript Files"
+        },
+        {
+            "prefix": "js",
+            "name": "init.js",
+            "location": "src/js/",
+            "tag": "script"
+        }
+    ]
+}
