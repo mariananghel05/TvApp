@@ -11,7 +11,7 @@
             "prefix": "html",
             "name": "index.html",
             "location": "src/test/",
-            "tag": "<div>"
+            "tag": "div"
         },
         {
             "prefix": "js",
