@@ -6,6 +6,24 @@
             "name": "init.js",
             "location": "src/js/",
             "tag": "script"
+        },
+        {
+            "prefix": "html",
+            "name": "index.html",
+            "location": "src/test/",
+            "tag": "<div>"
+        },
+        {
+            "prefix": "js",
+            "name": "script.js",
+            "location": "src/test/",
+            "tag": "script"
+        },
+        {
+            "prefix": "css",
+            "name": "style.css",
+            "location": "src/test/",
+            "tag": "style"
         }
     ]
 }
