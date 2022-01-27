@@ -16,7 +16,7 @@ style.rel = 'stylesheet'
 style.href = 'https://mariananghel05.github.io/TvApp/Production/src/style.css'
 document.head.appendChild(style)
 
-var http = new Request("https://mariananghel05.github.io/TvApp/Production/src/index.html", "get", "text")
+var http = new Request("https://mariananghel05.github.io/TvApp/Production/src/index.html", "GET")
 http.get(text=>{
     var html = document.createElement("div")
     html.innerHTML = text
