@@ -7,7 +7,7 @@ var script = document.createElement("script");
 script.src = "https://mariananghel05.github.io/TvApp/Production/src/script.js";
 document.head.appendChild(script);
 
-var style = document.createElement("style");
+var style = document.createElement("link");
 style.rel = "stylesheet";
 style.href = "https://mariananghel05.github.io/TvApp/Production/src/style.css";
 document.head.appendChild(style);
