@@ -7,6 +7,8 @@ document.head.appendChild(script)
 
 var script2 = document.createElement('script')
 script2.src = "https://mariananghel05.github.io/TvApp/Production/src/script.js"
+console.log("script: ",script)
+console.log("script2: ",script2)
 body.appendChild(script2)
 
 
