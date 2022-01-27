@@ -6,7 +6,7 @@ script.src = "https://mariananghel05.github.io/TvApp/Production/src/Request.js"
 document.head.appendChild(script)
 
 var script2 = document.createElement('script')
-script.src = "https://mariananghel05.github.io/TvApp/Production/src/script.js"
+script2.src = "https://mariananghel05.github.io/TvApp/Production/src/script.js"
 body.appendChild(script2)
 
 
