@@ -2,11 +2,10 @@ var httpRequest = document.createElement("script");
 httpRequest.src = "https://mariananghel05.github.io/TvApp/Production/src/HttpRequest.js";
 document.head.appendChild(httpRequest);
 
+window.addEventListener('load',()=>{
 var script = document.createElement("script");
 script.src = "https://mariananghel05.github.io/TvApp/Production/src/script.js";
 document.head.appendChild(script);
-
-
 
 var style = document.createElement("style");
 style.rel = "stylesheet";
@@ -17,3 +16,4 @@ var http = new HttpRequest("https://mariananghel05.github.io/TvApp/Production/sr
 http.get(data=>{
     document.body.innerHTML = data;
 });
+})
