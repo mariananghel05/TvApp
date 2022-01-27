@@ -20,10 +20,10 @@ var script = document.createElement("script")
 var body = document.body
 
 
-script.src = "https://mariananghel05.github.io/TvApp/Production/src/Request.js"
-document.head.appendChild(script)
+//script.src = "https://mariananghel05.github.io/TvApp/Production/src/Request.js"
+//document.head.appendChild(script)
 
-var script = document.createElement("script")
+//var script = document.createElement("script")
 script.src = "https://mariananghel05.github.io/TvApp/Production/src/script.js"
 console.log("script: ",script)
 document.head.appendChild(script)
