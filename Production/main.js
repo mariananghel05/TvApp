@@ -5,11 +5,10 @@ var body = document.body
 script.src = "https://mariananghel05.github.io/TvApp/Production/src/Request.js"
 document.head.appendChild(script)
 
-var script2 = document.createElement('script')
-script2.src = "https://mariananghel05.github.io/TvApp/Production/src/script.js"
+var script = document.createElement('script')
+script.src = "https://mariananghel05.github.io/TvApp/Production/src/script.js"
 console.log("script: ",script)
-console.log("script2: ",script2)
-body.appendChild(script2)
+document.head.appendChild(script)
 
 
 var style = document.createElement('style')
