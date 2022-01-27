@@ -5,9 +5,9 @@ var body = document.body
 script.src = "https://mariananghel05.github.io/TvApp/Production/src/Request.js"
 document.head.appendChild(script)
 
-script = document.createElement('script')
+var script2 = document.createElement('script')
 script.src = "https://mariananghel05.github.io/TvApp/Production/src/script.js"
-body.appendChild(script)
+body.appendChild(script2)
 
 
 var style = document.createElement('style')
