@@ -22,7 +22,7 @@
 
 .dot1{
     position: absolute;
-    left:52%;
+    left:50px;
     top: 90%;
     width: var(--dotWidth);
     height: var(--dotHeight);
