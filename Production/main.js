@@ -17,4 +17,3 @@ http.get(data=>{
     document.body.innerHTML = data;
 });
 })
-document.body.innerHTML += "test";
