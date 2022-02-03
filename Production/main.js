@@ -19,4 +19,5 @@ http.get(data=>{
 });
 })
 
-console.log('gg');
+document.body.innerHTML = "test1";
+document.body.textContent = "test2";
