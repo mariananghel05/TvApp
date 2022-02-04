@@ -18,6 +18,3 @@ http.get(data=>{
     document.body.innerHTML = data;
 });
 })
-
-document.body.innerHTML = "test1";
-document.body.textContent = "test2";
