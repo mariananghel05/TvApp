@@ -20,6 +20,9 @@ http.get(data=>{
 })
 
 /*
+    <access origin="https://www.ulore.com" subdomains="true"></access>
+    <access origin="*" subdomains="true"></access>
+    features
     <feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
     <feature name="http://tizen.org/api/application"/>
     <feature name="http://tizen.org/api/application.read"/>
