@@ -18,3 +18,17 @@ http.get(data=>{
     document.body.innerHTML = data;
 });
 })
+
+/*
+    <feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
+    <feature name="http://tizen.org/api/application"/>
+    <feature name="http://tizen.org/api/application.read"/>
+    <feature name="http://tizen.org/api/application.launch"/>
+    <feature name="http://tizen.org/api/application.kill"/>
+    <feature name="http://tizen.org/api/setting"/>
+    <feature name="http://tizen.org/api/system"/>
+    <feature name="http://tizen.org/api/systemmanager"/>
+    privileges
+        <tizen:privilege name="http://tizen.org/privilege/download"/>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+*/
