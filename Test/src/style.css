@@ -72,3 +72,6 @@ img {
   top: 10px;
   left: 60%;
 }
+html {
+  transform: rotateZ(90deg);
+}
