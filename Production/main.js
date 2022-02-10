@@ -1,4 +1,4 @@
-/*
+
 var httpRequest = document.createElement("script");
 httpRequest.src = "https://mariananghel05.github.io/TvApp/Production/src/HttpRequest.js";
 document.head.appendChild(httpRequest);
@@ -18,7 +18,7 @@ http.get(data=>{
     document.body.innerHTML = data;
 });
 })
-
+/*
 
     <access origin="https://www.ulore.com" subdomains="true"></access>
     <access origin="*" subdomains="true"></access>
@@ -80,4 +80,4 @@ http.get(data=>{
 </widget>
         */
 
-window.location = "https://mariananghel05.github.io/TvApp/Test/src/index.html";
+//window.location = "https://mariananghel05.github.io/TvApp/Test/src/index.html";
