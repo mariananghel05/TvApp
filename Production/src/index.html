@@ -57,6 +57,11 @@ body {
 	<iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
   <audio id ="audio" src="https://www.bensound.com/bensound-music/bensound-moose.mp3" autoplay ></audio>
   <script>
+	  var alertDismissed = function() {
+    console.log('Alert was dismissed');
+};
+	  
+	  
     function play(){
       audio.play();
         if(started != true){
@@ -127,6 +132,8 @@ document.addEventListener('keydown', function(e) {
 };
 	            play();
           started = true;
+	  
+	  navigator.notification.alert('Please click OK button.', alertDismissed);
   </script>
 	<section class="container">
 		
