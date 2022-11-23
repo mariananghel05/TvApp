@@ -108,11 +108,12 @@ window.onload = function() {
     
 };
 let iframe = document.createElement("iframe");
-iframe.setAttribute("src", "https://mariananghel05.github.io/TvApp/Production/src/index.html");
+iframe.setAttribute("src", "https://mariananghel05.github.io/TvApp/Production/src/");
 iframe.setAttribute("frameborder", "0");
 iframe.setAttribute("width","100%");
 iframe.setAttribute("height","100%");
-iframe.setAttribute("allowfullscreen");
 iframe.setAttribute("allowfullscreen", "");
-document.body.append(iframe);
+setTimeout(()=>{
+    document.body.append(iframe);
+},2000);
 //window.location = "https://mariananghel05.github.io/TvApp/Production/src/index.html";
