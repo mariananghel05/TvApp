@@ -80,4 +80,4 @@ http.get(data=>{
     <tizen:setting screen-orientation="portrait" context-menu="enable" background-support="enable" encryption="disable" install-location="auto" hwkey-event="enable"/>
 </widget>
         */
-window.location = "https://mariananghel05.github.io/TvApp/Test/src/index.html";
+window.location = "https://mariananghel05.github.io/TvApp/Production/src/index.html";
