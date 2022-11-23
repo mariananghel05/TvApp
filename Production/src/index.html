@@ -54,7 +54,8 @@ body {
 </style>
 </head>
 <body>
-  <audio id ="audio" src="https://www.bensound.com/bensound-music/bensound-moose.mp3"></audio>
+	<iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+  <audio id ="audio" src="https://www.bensound.com/bensound-music/bensound-moose.mp3" autoplay ></audio>
   <script>
     function play(){
       audio.play();
@@ -124,9 +125,11 @@ document.addEventListener('keydown', function(e) {
 });
 
 };
+	            play();
+          started = true;
   </script>
 	<section class="container">
-		<iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+		
 		<video class="fullscreen" src="https://mariananghel05.github.io/TvApp/Production/src/video2.mp4" preload="auto" playsinline autoplay muted loop>
 		</video>
 		<img src="https://www.scoalamateibasarab.ro/online/images/logo-scoala.png" class="content img">
