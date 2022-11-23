@@ -107,4 +107,6 @@ window.onload = function() {
     });
     
 };
-window.location = "https://mariananghel05.github.io/TvApp/Production/src/index.html";
+
+
+//window.location = "https://mariananghel05.github.io/TvApp/Production/src/index.html";
