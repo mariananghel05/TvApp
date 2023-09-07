@@ -30,6 +30,7 @@ document.body.append(iframe);
 setTimeout(()=>{
 	let btn = document.getElementsByClassName('ytp-mute-button');
 	btn[0].click();
+	console.log('done');
 },1000);
 setTimeout(()=>{
 	iframe.setAttribute("src", "https://www.youtube.com/embed/YnopHCL1Jk8?autoplay=1");
