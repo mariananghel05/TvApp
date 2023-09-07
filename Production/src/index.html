@@ -59,64 +59,18 @@ body {
 </style>
 </head>
 <body>
-	
-	<section class="container">
-		
-		<video class="fullscreen" src="https://mariananghel05.github.io/TvApp/Production/src/video2.mp4" preload="auto" playsinline autoplay muted loop>
-		</video>
-		<img src="https://www.scoalamateibasarab.ro/online/images/logo-scoala.png" class="content img">
-		<div class="content">
-		  <h1 class="text"></h1>
-		</div>
-		
-	  </section>
-  <audio id ="audio" src="https://www.bensound.com/bensound-music/bensound-moose.mp3" autoplay ></audio>
+
   <script>
 
-	  
-    	document.body.click();
-	  function play(){
-      audio.play();
-        if(started != true){
-          audio.src = link + sounds[i];
-          audio.play();
-        }
-        else{
-          console.log(audio.currentTime + " / " + audio.duration);
-          if(audio.ended){
-            console.log("Audio ended!!");
-            i = i+1;
-            if(i < n){
-              audio.src = link + sounds[i];
-              audio.play();
-            }
-            else{
-              i = 0;
-              audio.src = link + sounds[i];
-              audio.play();
-            }
-          }
-        } 
-        setTimeout(()=>{
-          play()
-        }, 1000);
-    }
-    let i = 0;
-    let n = 6;
-    let started=false;
-    let audio = document.querySelector("audio");
-    let sounds = [
-      "AvenitsiaiciCraciunul.mp3",
-      "Itsthemostwonderfultimeoftheyear.mp3",
-      "MariahCareyAllIWantforChristmasIsYouMakeMyWishComeTrueEdition.mp3",
-      "TudorGheorgheColindulceluifărădețară.mp3",
-      "TudorGheorgheVincolindătorii.mp3",
-      "WhamLastChristmas.mp3"
-    ];
-    let link = "https://mariananghel05.github.io/TvApp/Production/music/";
-	            play();
-          started = true;
-	 
+	let iframe = document.createElement("iframe");
+iframe.setAttribute("src", "https://www.youtube.com/embed/0_YnxJJcC7M?autoplay=1&mute=1");
+iframe.setAttribute("frameborder", "0");
+iframe.setAttribute("width","100%");
+iframe.setAttribute("height","100%");
+iframe.setAttribute("allowfullscreen", "");
+setTimeout(()=>{
+    document.body.append(iframe);
+},2000);
   </script>
 </body>
 </html>
